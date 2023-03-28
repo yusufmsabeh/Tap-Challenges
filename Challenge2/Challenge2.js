@@ -1,4 +1,5 @@
 function majorityElements(array) {
+  if (array.length <= 1 || array.length >= 5 * 10e4) return "invalid array";
   let uniqueArray = [...new Set(array)];
   let n = array.length / 2;
   let majorityElementsArray = [];
